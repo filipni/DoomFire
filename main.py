@@ -113,7 +113,7 @@ def render_fire():
         frame_counter += 1
 
         percentage_done = math.ceil(100 * current_second / VIDEO_DURATION_SECONDS)
-        print(f"\r{percentage_done}% done", end="")
+        print("\r{}% done".format(percentage_done), end="")
 
     return fire_frames
 
